@@ -1,4 +1,4 @@
-name: CI Pipelin
+name: CI Pipeline
 
 on:
   push:
@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout do Código
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: action/setup-python@v5
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
